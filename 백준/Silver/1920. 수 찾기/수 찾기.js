@@ -1,5 +1,5 @@
 const fs = require('fs');
-const input = fs.readFileSync(0).toString().trim().split('\n');
+const input = fs.readFileSync(0).toString().split('\n');
 const nArray = input[1].split(' ').map(Number); //입력받은 숫자들
 const mArray = input[3].split(' ').map(Number); //찾아야 할 숫자들
 const nSet = new Set(nArray);
