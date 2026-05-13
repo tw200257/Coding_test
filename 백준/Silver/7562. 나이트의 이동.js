@@ -1,14 +1,14 @@
 import java.util.*;
 import java.io.*;
 
-public class Main {
+공개 class Main {
     static int L; // 체스판의 한 변의 길이
     static int startX, startY, endX, endY;
     static boolean[][] visited;
     static int[] dx = {-2, -1, 1, 2, 2, 1, -1, -2};
     static int[] dy = {1, 2, 2, 1, -1, -2, -2, -1};
 
-    public static void main(String[] args) throws IOException {
+    공개 static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt(); // 테스트 케이스 개수
 
@@ -28,7 +28,7 @@ public class Main {
         }
     }
 
-    public static int bfs() {
+    공개 static int bfs() {
         Queue<int[]> queue = new LinkedList<>();
         visited = new boolean[L][L];
 
